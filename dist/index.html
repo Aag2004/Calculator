@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator-App</title>
+</head>
+
+<body class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-cover">
+    <div class="justify-evenly p-11 flex align-middle">
+        <div class="hidden md:mt-10 text-4xl font-bold md:w-110 md:visible">CalculateIt</div>
+        <div class="w-110 drop-shadow-[0_35px_35px_rgba(0,0,0,0.75)] bg-black rounded-5xl h-auto">
+            <div class="flex-row rounded-5xl">
+                <div class="rounded-full p-5">
+                    <input id="display"
+                        class="bg-transparent text-white input font-semibold p-4 text-4xl w-full rounded-xl"
+                        type="text" />
+                </div>
+                <div class="bg-black h-24">
+                    <div class="justify-center p-5">
+                        <button data-key="C"
+                            class="button mr-3 p-2 border-2 border-black rounded-xl cursor-pointer font-bold w-16 bg-opacity-50 hover:opacity-50 text-gray-300 text-3xl bg-gray-400">C</button>
+                        <button data-key="back"
+                            class="button mr-3 p-2 border-2 border-black rounded-xl cursor-pointer font-bold w-16 bg-opacity-50 hover:opacity-50 text-gray-300 text-3xl bg-gray-400">X</button>
+                        <button data-key="%"
+                            class="button mr-3 p-2   rounded-xl cursor-pointer font-bold w-16 text-blue-600 text-3xl bg-opacity-40 bg-blue-600 hover:opacity-50 hover:text-white">%</button>
+                        <button data-key="/"
+                            class="button  mr-3 p-2 border-2 border-black rounded-xl cursor-pointer font-extrabold text-3xl bg-opacity-40 bg-blue-600 text-blue-600 hover:opacity-50 w-32 ml-3">/</button>
+                    </div>
+                    <div class="bg-black h-24">
+                        <div class="p-5">
+                            <button data-key="7"
+                                class="button mr-3 p-2   rounded-xl cursor-pointer font-bold w-16 text-blue-600 text-3xl bg-slate-300 bg-opacity-20 hover:opacity-50 hover:text-white">7</button>
+                            <button data-key="8"
+                                class="button mr-3 p-2   rounded-xl cursor-pointer font-bold w-16 text-blue-600 text-3xl bg-slate-300 bg-opacity-20 hover:opacity-50 hover:text-white">8</button>
+
+                            <button data-key="9"
+                                class="button mr-3 p-2   rounded-xl cursor-pointer font-bold w-16 text-blue-600 text-3xl bg-slate-300 bg-opacity-20 hover:opacity-50 hover:text-white">9</button>
+                            <button data-key="*"
+                                class="button  mr-3 p-2 border-2 border-black rounded-xl cursor-pointer font-extrabold text-3xl bg-opacity-40 bg-blue-600 text-blue-600 hover:opacity-50 w-32 ml-3">*</button>
+                        </div>
+                        <div class="bg-black h-24">
+                            <div class="p-5">
+                                <button data-key="4"
+                                    class="button mr-3 p-2   rounded-xl cursor-pointer font-bold w-16 text-blue-600 text-3xl bg-slate-300 bg-opacity-20 hover:opacity-50 hover:text-white">4</button>
+                                <button data-key="5"
+                                    class="button mr-3 p-2   rounded-xl cursor-pointer font-bold w-16 text-blue-600 text-3xl bg-slate-300 bg-opacity-20 hover:opacity-50 hover:text-white">5</button>
+                                <button data-key="6"
+                                    class="button mr-3 p-2   rounded-xl cursor-pointer font-bold w-16 text-blue-600 text-3xl bg-slate-300 bg-opacity-20 hover:opacity-50 hover:text-white">6</button>
+                                <button data-key="-"
+                                    class="button  mr-3 p-2 border-2 border-black rounded-xl cursor-pointer font-extrabold text-3xl bg-opacity-40 bg-blue-600 text-blue-600 hover:opacity-50 w-32 ml-3">-</button>
+                            </div>
+                            <div class="bg-black h-24">
+                                <div class="p-5">
+                                    <button data-key="1"
+                                        class="button mr-3 p-2 rounded-xl cursor-pointer font-bold w-16 text-blue-600 text-3xl bg-slate-300 bg-opacity-20 hover:opacity-50 hover:text-white">1</button>
+                                    <button data-key="2"
+                                        class="button mr-3 p-2   rounded-xl cursor-pointer font-bold w-16 text-blue-600 text-3xl bg-slate-300 bg-opacity-20 hover:opacity-50 hover:text-white">2</button>
+                                    <button data-key="3"
+                                        class="button mr-3 p-2   rounded-xl cursor-pointer font-bold w-16 text-blue-600 text-3xl bg-slate-300 bg-opacity-20 hover:opacity-50 hover:text-white">3</button>
+                                    <button data-key="+"
+                                        class="button  mr-3 p-2 border-2 border-black rounded-xl cursor-pointer font-extrabold text-3xl bg-opacity-40 bg-blue-600 text-blue-600 hover:opacity-50 w-32 ml-3">+</button>
+                                </div>
+
+                                <div class="bg-black h-24">
+                                    <div class="p-5">
+                                        <button data-key="0"
+                                            class="button mr-3 p-2   rounded-xl cursor-pointer font-bold w-36 text-blue-600 text-3xl bg-slate-300 bg-opacity-20 hover:opacity-50 hover:text-white">0</button>
+                                        <button data-key="."
+                                            class="button mr-3 p-2   rounded-xl cursor-pointer font-bold w-16 text-blue-600 text-3xl bg-slate-300 bg-opacity-20 hover:opacity-50 hover:text-white">.</button>
+                                        <button data-key="="
+                                            class="button  mr-3 p-2 rounded-xl cursor-pointer font-extrabold text-3xl bg-opacity-40 bg-blue-600 text-blue-200 hover:opacity-50 w-32 ml-3">=</button>
+                                    </div>
+                                </div>
+                                <div class="bg-black h-24 -mt-10 rounded-5xl">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
